@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      var ua = navigator.userAgent.toLowerCase();
+      if (/android/.test(ua)) {
+        window.location.href = "https://www.android.com";
+      } else if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.href = "https://www.apple.com";
+      } else {
+        window.location.href = "https://www.android.com";
+      }
+    };
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
